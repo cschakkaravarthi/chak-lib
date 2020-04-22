@@ -1,0 +1,651 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components ContentWrapper should render correctly 1`] = `
+<ForwardRef
+  body={false}
+  className="undefined content-wrapper-top-border-lightblue rounded-0 border-0"
+>
+  <ForwardRef>
+    <div
+      className="row"
+    >
+      <div
+        className="col-12"
+      >
+        <ForwardRef
+          className="font-size-xl font-weight-bold"
+        >
+          Test title
+        </ForwardRef>
+      </div>
+    </div>
+    <p>
+      Testing ContentWrapper children prop
+    </p>
+  </ForwardRef>
+</ForwardRef>
+`;
+
+exports[`Components Date Range Header should render correctly 1`] = `
+<div
+  className="date-range-header d-flex justify-content-between align-items-baseline undefined"
+>
+  <p>
+    From
+  </p>
+  <p>
+    Date
+  </p>
+</div>
+`;
+
+exports[`Components should render correctly for AllLinksButton 1`] = `
+<button
+  className="d-inline-flex align-items-center align-middle btn-upper dark-background text-white"
+  onClick={[Function]}
+>
+  <img
+    className="d-md-inline order-md-2 all-links-image"
+  />
+  <span
+    className="font-size-sm m-3"
+  >
+    All Links
+  </span>
+</button>
+`;
+
+exports[`Components should render correctly for HambugerButton 1`] = `
+<div
+  className="mr-3 ml-3 position-relative hamburger"
+  onClick={[Function]}
+>
+  <span
+    className="position-absolute"
+  />
+  <span
+    className="position-absolute"
+  />
+  <span
+    className="position-absolute"
+  />
+  <span
+    className="position-absolute"
+  />
+</div>
+`;
+
+exports[`Components should render correctly for NotificationsBadge 1`] = `
+<button
+  className="notifications-badge align-middle"
+  onClick={[Function]}
+>
+  <img
+    className="mr-2 d-inline"
+    height={18}
+    src="test-file-stub"
+    width={15}
+  />
+  <ForwardRef
+    className="ml-3 d-flex justify-content-center"
+    pill={false}
+    variant="danger"
+  >
+    3
+  </ForwardRef>
+</button>
+`;
+
+exports[`Components should render correctly for SiteLogo 1`] = `
+<button
+  className="site-logo"
+  onClick={[Function]}
+>
+  <ForwardRef
+    fluid={false}
+    rounded={false}
+    roundedCircle={false}
+    src="test-file-stub"
+    thumbnail={false}
+  />
+</button>
+`;
+
+exports[`Components should render correctly for UserBadge 1`] = `
+<button
+  className="undefined user-badge text-white d-inline-flex align-items-center align-middle"
+  disabled={false}
+  onClick={[Function]}
+>
+  <span
+    className="d-none d-sm-inline order-xl-2 font-weight-bold"
+  >
+    Luz Lacson
+  </span>
+  <ForwardRef
+    alt="Luz Lacson"
+    className="order-xl-1"
+    fluid={false}
+    rounded={false}
+    roundedCircle={true}
+    src="https://media.licdn.com/dms/image/C4D03AQHgxarEg1Cvuw/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=thBaLX-J3-MoHdpJ3MvombNd4LOKfMHNRPLlmopM6KI"
+    thumbnail={false}
+  />
+</button>
+`;
+
+exports[`should render correctly for Alert Modal 1`] = `
+<ForwardRef(render)
+  className="alert-modal"
+  onHide={[Function]}
+  show={true}
+>
+  <ForwardRef
+    className="text-condensed font-weight-bold text-center pt-5"
+  >
+    Please enter both month and day for Birthday.
+  </ForwardRef>
+  <ForwardRef
+    className="border-0 d-flex justify-content-center"
+  >
+    <ForwardRef
+      className="w-100 mb-5"
+      noGutters={false}
+    >
+      <ForwardRef
+        className="text-center"
+        lg="12"
+        md="12"
+      >
+        <Unknown
+          className="font-size-sm text-upper primary-button"
+          handleClick={[Function]}
+          title="Ok"
+          uniqueIdentifier="close"
+        />
+      </ForwardRef>
+    </ForwardRef>
+  </ForwardRef>
+</ForwardRef(render)>
+`;
+
+exports[`should render correctly for Button with Icon 1`] = `
+<button
+  className="font-size-sm undefined"
+  onClick={[Function]}
+>
+  <ForwardRef
+    fluid={false}
+    height={20}
+    rounded={false}
+    roundedCircle={false}
+    src="test-file-stub"
+    thumbnail={false}
+    width={20}
+  />
+  <span
+    className="pl-2 gray-600"
+  >
+    Add to My Contacts
+  </span>
+</button>
+`;
+
+exports[`should render correctly for CheckBox 1`] = `
+<ForwardRef
+  inline={false}
+  onClick={[Function]}
+>
+  <ForwardRef
+    custom={true}
+    disabled={false}
+    inline={false}
+    isInvalid={false}
+    isValid={false}
+    label="CheckLabel"
+    title=""
+    type="checkbox"
+  />
+</ForwardRef>
+`;
+
+exports[`should render correctly for CheckBox 2`] = `
+<div
+  className="left-label-checkbox font-size-sm pr-1"
+  onClick={[Function]}
+>
+  <label
+    className="checked"
+  >
+    label
+  </label>
+  <input
+    checked={true}
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`should render correctly for Close toggle Button 1`] = `
+<ForwardRef
+  active={false}
+  className="dark-background p-3 menu-toggler"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+  variant="dark"
+>
+  <img
+    height={50}
+    src="test-file-stub"
+    width={50}
+  />
+</ForwardRef>
+`;
+
+exports[`should render correctly for Confirmation Modal 1`] = `
+<ForwardRef(render)
+  className="confirmation-modal"
+  onHide={[Function]}
+  show={true}
+>
+  <ForwardRef
+    className="text-condensed font-weight-bold text-center pt-5"
+  >
+    Are you sure you want to remove this contact?
+  </ForwardRef>
+  <ForwardRef
+    className="border-0 d-flex justify-content-center"
+  >
+    <ForwardRef
+      className="w-100 mb-5"
+      noGutters={false}
+    >
+      <ForwardRef
+        className="text-center"
+        xs="6"
+      >
+        <Unknown
+          className="font-size-sm text-upper"
+          handleClick={[Function]}
+          title="Cancel"
+          uniqueIdentifier="close"
+        />
+      </ForwardRef>
+      <ForwardRef
+        className="text-center"
+        xs="6"
+      >
+        <Unknown
+          className="font-size-sm text-upper"
+          handleClick={[Function]}
+          title="Remove"
+          uniqueIdentifier="save"
+        />
+      </ForwardRef>
+    </ForwardRef>
+  </ForwardRef>
+</ForwardRef(render)>
+`;
+
+exports[`should render correctly for Edit Button 1`] = `
+<ForwardRef
+  active={false}
+  className="edit-button "
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+  variant="primary"
+>
+  <ForwardRef
+    className="pr-1 d-inline"
+    fluid={false}
+    height={15}
+    rounded={false}
+    roundedCircle={false}
+    src="test-file-stub"
+    thumbnail={false}
+    width={15}
+  />
+  <span
+    className="d-sm-inline order-xl-2 font-size-xs text-uppercase letter-spacing-01rem"
+  >
+    Edit
+  </span>
+</ForwardRef>
+`;
+
+exports[`should render correctly for Error 1`] = `
+<div
+  className="text-center mt-5"
+>
+  <ForwardRef
+    fluid={false}
+    height={115}
+    rounded={false}
+    roundedCircle={false}
+    src="test-file-stub"
+    thumbnail={false}
+    width={150}
+  />
+  <p
+    className="mt-5 gray-600 font-weight-bold font-size-title"
+  >
+    Please upgrade your browser.
+  </p>
+  <p
+    className="font-size-base m-auto align-text-center"
+  >
+    UMG Central has detected that you are using an unsupported browser. Please use links below to download and install a supported browser.
+  </p>
+  <div
+    className="mt-5 d-flex justify-content-center"
+  >
+    <div
+      className="mr-5"
+    >
+      <ForwardRef
+        fluid={false}
+        height={50}
+        rounded={false}
+        roundedCircle={false}
+        thumbnail={false}
+        width={50}
+      />
+      <a
+        className="d-block font-size-sm text-decoration-underline"
+        href="#"
+      >
+        Google Chrome
+      </a>
+    </div>
+    <div
+      className="mr-5"
+    >
+      <ForwardRef
+        fluid={false}
+        height={50}
+        rounded={false}
+        roundedCircle={false}
+        thumbnail={false}
+        width={50}
+      />
+      <a
+        className="d-block font-size-sm text-decoration-underline"
+        href="#"
+      >
+        Apple Safari
+      </a>
+    </div>
+    <div>
+      <ForwardRef
+        fluid={false}
+        height={50}
+        rounded={false}
+        roundedCircle={false}
+        thumbnail={false}
+        width={50}
+      />
+      <a
+        className="d-block font-size-sm text-decoration-underline"
+        href="#"
+      >
+        Microsoft Edge
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render correctly for FooterFeedbackView 1`] = `
+<div
+  className="footer-container w-100 text-sm-right text-center d-flex flex-column justify-content-center"
+>
+  <ForwardRef
+    fluid={false}
+  >
+    <a
+      className="d-sm-inline order-xl-2 btn-secondary btn-feedback font-weight-bold text-uppercase letter-spacing-01rem"
+      target="new"
+    >
+      Edit
+    </a>
+  </ForwardRef>
+</div>
+`;
+
+exports[`should render correctly for Organisation Chart 1`] = `
+<ForwardRef
+  body={false}
+  className="cards-list-container fix-height p-3 border-0 rounded-0 h-100"
+>
+  <ForwardRef>
+    <div
+      className="d-flex justify-content-between align-items-baseline mb-3"
+    >
+      <ForwardRef
+        className="text-upper mb-4 font-size-md"
+      >
+        ORG CHART
+      </ForwardRef>
+    </div>
+    <div
+      className="org-chart font-size-sm overflow-auto"
+    >
+      <ul>
+        <li
+          className="list-unstyled position-relative"
+        >
+          <div
+            className="cursor-pointer"
+            onClick={[Function]}
+          >
+            <ForwardRef
+              className="org-chart-child-card text-left m-0 pl-3"
+              fluid={false}
+            >
+              <ForwardRef
+                className="pl-2 font-weight-bold pr-2"
+                noGutters={false}
+              >
+                Tom Mitchell
+              </ForwardRef>
+              <ForwardRef
+                className="pl-2 text-condensed"
+                noGutters={false}
+              >
+                CEO
+              </ForwardRef>
+            </ForwardRef>
+          </div>
+          <ul>
+            <li
+              className="list-unstyled position-relative"
+            >
+              <div>
+                <ForwardRef
+                  className="org-chart-parent-card m-0  pt-2 pl-3 pb-2"
+                  fluid={false}
+                >
+                  <ForwardRef
+                    className="pl-2 font-weight-bold pr-2 text-left org-chart-parent-card-font"
+                    noGutters={false}
+                  >
+                    Luz Lacson
+                  </ForwardRef>
+                </ForwardRef>
+              </div>
+              <ol>
+                <li
+                  className="list-unstyled position-relative"
+                >
+                  <div
+                    className="cursor-pointer"
+                    onClick={[Function]}
+                  >
+                    <ForwardRef
+                      className="org-chart-child-card  text-left m-0 pl-3"
+                      fluid={false}
+                    >
+                      <ForwardRef
+                        className="pl-2 font-weight-bold pr-2"
+                        noGutters={false}
+                      >
+                        Harman Kaur
+                      </ForwardRef>
+                      <ForwardRef
+                        className="pl-2 text-condensed"
+                        noGutters={false}
+                      >
+                        Business Analyst
+                      </ForwardRef>
+                    </ForwardRef>
+                  </div>
+                </li>
+                <li
+                  className="list-unstyled position-relative"
+                >
+                  <div
+                    className="cursor-pointer"
+                    onClick={[Function]}
+                  >
+                    <ForwardRef
+                      className="org-chart-child-card  text-left m-0 pl-3"
+                      fluid={false}
+                    >
+                      <ForwardRef
+                        className="pl-2 font-weight-bold pr-2"
+                        noGutters={false}
+                      >
+                        Ed Rowell
+                      </ForwardRef>
+                      <ForwardRef
+                        className="pl-2 text-condensed"
+                        noGutters={false}
+                      >
+                        Sr. Business Analyst
+                      </ForwardRef>
+                    </ForwardRef>
+                  </div>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </ForwardRef>
+</ForwardRef>
+`;
+
+exports[`should render correctly for Partition with message 1`] = `
+<div
+  className="gray-600"
+>
+  <p
+    className="text-upper font-size-md text-center top-gray-border"
+  >
+    The information below is private
+  </p>
+</div>
+`;
+
+exports[`should render correctly for Primary button 1`] = `
+<ForwardRef
+  active={false}
+  className="btn-primary font-size-sm letter-spacing-01rem font-weight-bold text-uppercase undefined"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+  variant="primary"
+>
+  Primary Button
+</ForwardRef>
+`;
+
+exports[`should render correctly for Secondary Button 1`] = `
+<ForwardRef
+  active={false}
+  className="btn-secondary font-weight-bold text-uppercase letter-spacing-01rem"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+  variant="outline-secondary"
+>
+  <span
+    className="d-sm-inline order-xl-2"
+  >
+    Secondary Button
+  </span>
+</ForwardRef>
+`;
+
+exports[`should render correctly for Thumb button like 1`] = `
+<button
+  className="like-icon d-flex align-items-center"
+  onClick={[Function]}
+>
+  <ForwardRef
+    fluid={false}
+    height={14}
+    rounded={false}
+    roundedCircle={false}
+    src="test-file-stub"
+    thumbnail={false}
+    width={14}
+  />
+  <span
+    className="ml-1"
+  >
+    12
+  </span>
+</button>
+`;
+
+exports[`should render correctly for Thumb button unlike 1`] = `
+<button
+  className="unlike-icon d-flex align-items-center"
+  onClick={[Function]}
+>
+  <ForwardRef
+    fluid={false}
+    height={14}
+    rounded={false}
+    roundedCircle={false}
+    src="test-file-stub"
+    thumbnail={false}
+    width={14}
+  />
+  <span
+    className="ml-1"
+  >
+    12
+  </span>
+</button>
+`;
+
+exports[`should render correctly for Toast 1`] = `
+<div
+  className="toast toast-success show"
+>
+  Added to My Contacts
+</div>
+`;
+
+exports[`should render correctly for Toast 2`] = `
+<div
+  className="toast toast-error show"
+>
+  Contact is already in My Contacts
+</div>
+`;
+
+exports[`should render correctly for Upload Button 1`] = `
+<button
+  className="upload-button font-weight-bold text-uppercase letter-spacing-01rem undefined"
+  id="1"
+  onClick={[Function]}
+>
+  Upload
+</button>
+`;

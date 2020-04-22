@@ -1,0 +1,30 @@
+$css-icon-weight: 3px;
+$css-icon-size: rhythm(4);
+$css-icon-color: $gray-800;
+
+.css-icon-x {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: $css-icon-size;
+  height: $css-icon-size;
+  margin-right: rhythm(2);
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: $css-icon-size/2;
+    content: '';
+    height: $css-icon-size;
+    width: $css-icon-weight;
+    background-color: $css-icon-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

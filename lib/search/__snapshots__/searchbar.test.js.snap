@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar should render correctly 1`] = `
+<ForwardRef
+  className="search-form"
+  inline={false}
+  onSubmit={[Function]}
+>
+  <ForwardRef>
+    <ForwardRef>
+      <ForwardRef
+        active={false}
+        disabled={false}
+        type="submit"
+        variant="outline-secondary"
+      >
+        <img
+          height={15}
+          src="test-file-stub"
+          width={15}
+        />
+      </ForwardRef>
+    </ForwardRef>
+    <ForwardRef
+      aria-label="Search"
+      onChange={[Function]}
+      placeholder="Search"
+      value=""
+    />
+  </ForwardRef>
+</ForwardRef>
+`;

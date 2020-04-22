@@ -1,0 +1,68 @@
+@import 'modules';
+@import '~bootstrap/scss/badge';
+
+$badge-top-position: 15px;
+$badge-left-position: 22px;
+
+.site-logo img {
+  // This is the site logo for some reason.
+  height: rhythm(7);
+}
+
+.user-badge img {
+  height: rhythm(7);
+  width: rhythm(7);
+  object-fit: cover;
+}
+
+.people-badge img {
+  height: rhythm(10);
+  width: rhythm(10);
+  object-fit: cover;
+}
+
+.user-badge span {
+  margin: 0 rhythm(3);
+}
+
+.user-badge-skeleton-wrapper {
+  margin: 0 !important;
+
+  + .css-1a3vkdg {
+    .circle-skeleton,
+    .css-19bon8n {
+      margin: 0 !important;
+    }
+  }
+  
+  span,
+  .css-19bon8n {
+    margin: 0 !important;
+  }
+} 
+
+.notifications-badge {
+  position: relative;
+  padding: rhythm(4) rhythm(6);
+
+  svg {
+    color: $white;
+  }
+
+  .badge {
+    width: 1rem;
+    padding: 4px;
+    height: 1rem;
+    font-size: 0.6rem;
+    position: absolute;
+    border-radius: 50%;
+    line-height: 0.5rem;
+    top: $badge-top-position;
+    left: $badge-left-position;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    color: $gray-500;
+  }
+}

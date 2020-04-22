@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBarAutoSuggest should render correctly 1`] = `
+<ForwardRef
+  className="auto-suggest-form align-items-center d-flex"
+  inline={false}
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <ForwardRef>
+    <ForwardRef>
+      <ForwardRef
+        active={false}
+        className="pl-0 border-0"
+        disabled={false}
+        type="submit"
+        variant="outline-secondary"
+      >
+        <img
+          className="search-icon"
+          src="test-file-stub"
+        />
+      </ForwardRef>
+    </ForwardRef>
+    <Autosuggest
+      alwaysRenderSuggestions={false}
+      focusInputOnSuggestionClick={true}
+      getSuggestionValue={[Function]}
+      highlightFirstSuggestion={false}
+      id="1"
+      inputProps={
+        Object {
+          "onChange": [Function],
+          "placeholder": undefined,
+          "value": "",
+        }
+      }
+      multiSection={false}
+      onSuggestionSelected={[Function]}
+      onSuggestionsClearRequested={[Function]}
+      onSuggestionsFetchRequested={[Function]}
+      renderSuggestion={[Function]}
+      renderSuggestionsContainer={[Function]}
+      shouldRenderSuggestions={[Function]}
+      suggestions={Array []}
+      theme={
+        Object {
+          "container": "react-autosuggest__container",
+          "containerOpen": "react-autosuggest__container--open",
+          "input": "react-autosuggest__input",
+          "inputFocused": "react-autosuggest__input--focused",
+          "inputOpen": "react-autosuggest__input--open",
+          "sectionContainer": "react-autosuggest__section-container",
+          "sectionContainerFirst": "react-autosuggest__section-container--first",
+          "sectionTitle": "react-autosuggest__section-title",
+          "suggestion": "react-autosuggest__suggestion",
+          "suggestionFirst": "react-autosuggest__suggestion--first",
+          "suggestionHighlighted": "react-autosuggest__suggestion--highlighted",
+          "suggestionsContainer": "react-autosuggest__suggestions-container",
+          "suggestionsContainerOpen": "react-autosuggest__suggestions-container--open",
+          "suggestionsList": "react-autosuggest__suggestions-list",
+        }
+      }
+    />
+    <div
+      className="d-none d-lg-inline"
+    />
+  </ForwardRef>
+</ForwardRef>
+`;
+
+exports[`SearchBarAutoSuggest should render correctly mobile search bar 1`] = `
+<ForwardRef
+  className="mobile-search-bar align-items-center d-flex"
+  inline={false}
+  onReset={[Function]}
+  onSubmit={[Function]}
+>
+  <ForwardRef>
+    <Autosuggest
+      alwaysRenderSuggestions={false}
+      focusInputOnSuggestionClick={true}
+      getSuggestionValue={[Function]}
+      highlightFirstSuggestion={false}
+      id="1"
+      inputProps={
+        Object {
+          "onChange": [Function],
+          "placeholder": undefined,
+          "value": "",
+        }
+      }
+      multiSection={false}
+      onSuggestionSelected={[Function]}
+      onSuggestionsClearRequested={[Function]}
+      onSuggestionsFetchRequested={[Function]}
+      renderSuggestion={[Function]}
+      renderSuggestionsContainer={[Function]}
+      shouldRenderSuggestions={[Function]}
+      suggestions={Array []}
+      theme={
+        Object {
+          "container": "react-autosuggest__container",
+          "containerOpen": "react-autosuggest__container--open",
+          "input": "react-autosuggest__input",
+          "inputFocused": "react-autosuggest__input--focused",
+          "inputOpen": "react-autosuggest__input--open",
+          "sectionContainer": "react-autosuggest__section-container",
+          "sectionContainerFirst": "react-autosuggest__section-container--first",
+          "sectionTitle": "react-autosuggest__section-title",
+          "suggestion": "react-autosuggest__suggestion",
+          "suggestionFirst": "react-autosuggest__suggestion--first",
+          "suggestionHighlighted": "react-autosuggest__suggestion--highlighted",
+          "suggestionsContainer": "react-autosuggest__suggestions-container",
+          "suggestionsContainerOpen": "react-autosuggest__suggestions-container--open",
+          "suggestionsList": "react-autosuggest__suggestions-list",
+        }
+      }
+    />
+    <div
+      className=" d-lg-inline"
+    />
+    <ForwardRef>
+      <ForwardRef
+        active={false}
+        className="p-1 border-0"
+        disabled={false}
+        type="submit"
+        variant="outline-light"
+      >
+        <img
+          className="search-icon"
+          src="test-file-stub"
+        />
+      </ForwardRef>
+    </ForwardRef>
+  </ForwardRef>
+</ForwardRef>
+`;

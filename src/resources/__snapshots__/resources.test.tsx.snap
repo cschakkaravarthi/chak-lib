@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Resources should render correctly 1`] = `
+<ForwardRef
+  body={false}
+  className="rounded-0 p-2"
+>
+  <MainLink>
+    <ForwardRef
+      className="w-100 d-flex justify-content-between m-0 p-0 align-items-center"
+      noGutters={false}
+    >
+      <ForwardRef
+        lg={9}
+        md={9}
+        sm={9}
+        xl={9}
+      >
+        <strong
+          className="font-size-sm"
+        >
+          Link Text
+        </strong>
+      </ForwardRef>
+      <ForwardRef
+        className="text-right"
+        lg={3}
+        md={3}
+        sm={3}
+        xl={3}
+      >
+        <img
+          height={20}
+          src="test-file-stub"
+          width={20}
+        />
+      </ForwardRef>
+    </ForwardRef>
+  </MainLink>
+</ForwardRef>
+`;

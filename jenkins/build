@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -ev
+
+DOCKER_NAMESPACE=central
+DOCKER_IMAGE=umgc_ui_library
+
+if [[ ! -z "$DOCKER_REGISTRY_USR" && ! -z "$DOCKER_REGISTRY_PSW" ]]; then
+	docker login --username $DOCKER_REGISTRY_USR --password $DOCKER_REGISTRY_PSW docker-registry.umusic.com
+fi
+
+docker build . \
+  -t "docker-registry.umusic.com/$DOCKER_NAMESPACE/$DOCKER_IMAGE:latest"
+docker tag "docker-registry.umusic.com/$DOCKER_NAMESPACE/$DOCKER_IMAGE:latest" \
+    "docker-registry.umusic.com/$DOCKER_NAMESPACE/$DOCKER_IMAGE:${GIT_COMMIT}"
+docker push "docker-registry.umusic.com/$DOCKER_NAMESPACE/$DOCKER_IMAGE:${GIT_COMMIT}" &
+docker push "docker-registry.umusic.com/$DOCKER_NAMESPACE/$DOCKER_IMAGE:latest" &
+wait
+echo "docker-registry.umusic.com/$DOCKER_NAMESPACE/$DOCKER_IMAGE:${GIT_COMMIT}" > docker-image.txt

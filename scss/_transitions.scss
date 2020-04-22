@@ -1,0 +1,37 @@
+@import 'modules';
+@import '~bootstrap/scss/transitions';
+
+$top-z-index: 999999;
+$bottom-z-index: 999998;
+$max-width: 350px;
+
+.slide-menu-enter {
+  transform: translateX(-100%);
+}
+
+.slide-menu-enter-active {
+  transform: translateX(0);
+  transition: all 300ms ease;
+}
+
+.slide-menu-exit {
+  transform: translateX(0);
+  width: $max-width;
+}
+
+.slide-menu-exit-active {
+  transform: translateX(-100%);
+  transition: all 300ms ease;
+}
+
+.slide-menu-enter-done {
+  z-index: $top-z-index;
+}
+
+.slide-menu-backdrop {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: $bottom-z-index;
+}

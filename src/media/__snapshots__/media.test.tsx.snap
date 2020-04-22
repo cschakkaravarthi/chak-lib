@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Media should render primary correctly 1`] = `
+<ForwardRef
+  bsPrefix="media"
+>
+  <img
+    alt="Media title primary"
+    className="mr-4 rounded-circle mt-3"
+    height={64}
+    src="https://picsum.photos/id/522/200/200"
+    width={64}
+  />
+  <ForwardRef>
+    <p
+      className="font-weight-bold font-size-lg"
+    >
+      Media title primary
+    </p>
+    <p
+      className="font-size-base"
+    >
+      Some text to see how the primary body text looks
+    </p>
+  </ForwardRef>
+</ForwardRef>
+`;
+
+exports[`Media should render primary variant correctly 1`] = `
+<Unknown
+  bodyText="Some text to see how the primary body text looks"
+  sectionImageSrc="https://picsum.photos/id/522/200/200"
+  title="Media title primary"
+  variant="primary"
+/>
+`;
+
+exports[`Media should render secondary correctly 1`] = `
+<ForwardRef
+  bsPrefix="media"
+>
+  <img
+    alt="Generic placeholder"
+    className="mr-4 rounded-circle"
+    height={64}
+    src="https://picsum.photos/id/522/200/200"
+    width={64}
+  />
+  <ForwardRef>
+    <div
+      className="font-size-lg mt-3"
+    >
+      Section
+      <span
+        className="mx-3"
+      >
+        <img
+          className="gray-600 d-inline"
+          height={30}
+          src="test-file-stub"
+          width={10}
+        />
+      </span>
+      <span
+        className="font-weight-bold"
+      >
+        Subsection
+      </span>
+    </div>
+  </ForwardRef>
+</ForwardRef>
+`;
+
+exports[`Media should render secondary variant correctly 1`] = `
+<Unknown
+  sectionImageSrc="https://picsum.photos/id/522/200/200"
+  subsection="Subsection"
+  title="Section"
+  variant="secondary"
+/>
+`;

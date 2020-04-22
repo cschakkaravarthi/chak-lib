@@ -1,0 +1,14 @@
+@import 'modules';
+
+.alphabetical-line {
+  button {
+    padding: 0;
+    color: $gray-600;
+  }
+
+  .is-active,
+  button:hover {
+    color: $light-blue;
+    text-decoration: underline;
+  }
+}

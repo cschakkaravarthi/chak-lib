@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav should render Breadcrumb nav 1`] = `
+<ForwardRef
+  bsPrefix="nav breadcrumb-nav d-flex align-items-center bg-white undefined"
+  fill={false}
+  justify={false}
+  onSelect={[Function]}
+>
+  <ForwardRef
+    fluid={false}
+  >
+    <ForwardRef
+      noGutters={false}
+    >
+      <ForwardRef
+        bsPrefix="nav-item border-right font-weight-bold"
+      >
+        <Link
+          className="py-1 px-4 active"
+        />
+      </ForwardRef>
+      <ForwardRef
+        bsPrefix="nav-item border-right font-weight-bold"
+      >
+        <Link
+          className="py-1 px-4 "
+        />
+      </ForwardRef>
+      <ForwardRef
+        bsPrefix="nav-item border-right font-weight-bold"
+      >
+        <Link
+          className="py-1 px-4 "
+        />
+      </ForwardRef>
+      <ForwardRef
+        bsPrefix="nav-item border-right font-weight-bold"
+      >
+        <Link
+          className="py-1 px-4 "
+        />
+      </ForwardRef>
+    </ForwardRef>
+  </ForwardRef>
+</ForwardRef>
+`;
+
+exports[`Nav should render correctly NavBarSection 1`] = `
+<React.Fragment>
+  <div
+    className="nav-placeholder-top"
+  />
+  <div
+    className="navbar-top"
+  >
+    <Unknown
+      variant="standard"
+    >
+      <p>
+        Some content in a standard section
+      </p>
+    </Unknown>
+    <Unknown
+      variant="light"
+    >
+      <p>
+        Some content in a light section
+      </p>
+    </Unknown>
+    <Unknown
+      variant="dark"
+    >
+      <p>
+        Some content in a dark section
+      </p>
+    </Unknown>
+  </div>
+</React.Fragment>
+`;
+
+exports[`Nav should render correctly Primary Nav 1`] = `
+<ForwardRef
+  className="nav-primary undefined"
+  fill={false}
+  justify={false}
+>
+  <ul
+    className="list-unstyled mb-0"
+  >
+    <li>
+      <Link />
+    </li>
+    <li>
+      <Link />
+    </li>
+    <li>
+      <Link />
+    </li>
+  </ul>
+</ForwardRef>
+`;
+
+exports[`Nav should render correctly Secondary Nav 1`] = `
+<ForwardRef
+  className="nav-secondary undefined"
+  fill={false}
+  justify={false}
+>
+  <ul
+    className="list-unstyled mb-0"
+  >
+    <li>
+      <Link />
+    </li>
+    <li>
+      <Link />
+    </li>
+    <li>
+      <Link />
+    </li>
+  </ul>
+</ForwardRef>
+`;
+
+exports[`Nav should render correctly Secondary Nav Section 1`] = `
+<ForwardRef
+  className="nav-secondary undefined"
+  fill={false}
+  justify={false}
+>
+  <div
+    className="nav-section-title pt-0 font-weight-bold"
+  >
+    <span
+      className="w-75"
+    >
+      Quick Links
+    </span>
+  </div>
+  <div
+    className="nav-section-link"
+  >
+    <sectionLink />
+  </div>
+  <ul
+    className="list-unstyled mb-0"
+  >
+    <li>
+      <Link />
+    </li>
+    <li>
+      <Link />
+    </li>
+    <li>
+      <Link />
+    </li>
+  </ul>
+</ForwardRef>
+`;
+
+exports[`Nav should render correctly nav overlay 1`] = `
+<ForwardRef(render)
+  aria-labelledby="nav-overlay-title"
+  backdropClassName="all-links-backdrop"
+  className="nav-overlay"
+  onHide={[Function]}
+  show={true}
+  size="xl"
+>
+  <ForwardRef
+    closeButton={false}
+    closeLabel="Close"
+  >
+    <ForwardRef
+      className="w-100"
+      noGutters={false}
+    >
+      <ForwardRef
+        className="p-2 p-sm-2 p-md-2"
+        lg={3}
+        md={3}
+        sm={12}
+        xl={3}
+      >
+        <ForwardRef
+          active={false}
+          className="modal-close-button btn-upper text-left"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+          variant="link"
+        >
+          <span
+            className="css-icon-x"
+          />
+          Close
+        </ForwardRef>
+      </ForwardRef>
+      <ForwardRef
+        className="p-sm-2 p-md-2"
+        lg={6}
+        md={6}
+        sm={12}
+        xl={6}
+      />
+      <ForwardRef
+        lg={3}
+        md={3}
+        sm={12}
+        xl={3}
+      >
+        <Unknown
+          className="btn-primary font-size-sm letter-spacing-01rem ml-2 mt-2 ml-sm-3"
+          handleClick={[Function]}
+          title="EDIT MY LINKS"
+        />
+      </ForwardRef>
+    </ForwardRef>
+  </ForwardRef>
+  <ForwardRef>
+    <ForwardRef
+      noGutters={false}
+    >
+      <ForwardRef
+        md={4}
+        xl={3}
+      >
+        <Unknown
+          items={
+            Array [
+              Object {
+                "Link": [Function],
+                "key": 1,
+              },
+              Object {
+                "Link": [Function],
+                "key": 2,
+              },
+              Object {
+                "Link": [Function],
+                "key": 3,
+              },
+            ]
+          }
+          sectionIcon="test-file-stub"
+          sectionTitle="Company"
+          variant="secondary"
+        />
+      </ForwardRef>
+    </ForwardRef>
+  </ForwardRef>
+</ForwardRef(render)>
+`;
+
+exports[`Nav should render correctly navbar side 1`] = `
+<React.Fragment>
+  <div
+    className="navbar-side"
+  >
+    <Unknown
+      variant="standard"
+    >
+      <p>
+        Some content in a standard section
+      </p>
+    </Unknown>
+    <Unknown
+      variant="light"
+    >
+      <p>
+        Some content in a light section
+      </p>
+    </Unknown>
+    <Unknown
+      variant="dark"
+    >
+      <p>
+        Some content in a dark section
+      </p>
+    </Unknown>
+  </div>
+</React.Fragment>
+`;

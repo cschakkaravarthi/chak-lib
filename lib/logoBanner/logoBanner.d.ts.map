@@ -1,0 +1,1 @@
+{"version":3,"file":"logoBanner.d.ts","sourceRoot":"","sources":["../../src/logoBanner/logoBanner.tsx"],"names":[],"mappings":"AAAA,OAAc,EAAE,EAAE,EAAE,MAAM,OAAO,CAAC;AAGlC,OAAO,yBAAyB,CAAC;AAEjC,MAAM,WAAW,eAAe;IAC9B,SAAS,EAAE,MAAM,CAAC;IAClB,OAAO,EAAE,MAAM,CAAC;CACjB;AAED,eAAO,MAAM,UAAU,EAAE,EAAE,CAAC,eAAe,CAU1C,CAAC"}

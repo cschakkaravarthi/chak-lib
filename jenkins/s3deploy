@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -ev
+
+DOCKER_IMAGE=""
+if [[ -f docker-image.txt ]]; then
+  DOCKER_IMAGE=$(<docker-image.txt)
+else
+  DOCKER_IMAGE=docker-registry.umusic.com/ocp/umgc_ui_library:$GIT_COMMIT
+fi
+
+echo Deploying: $DOCKER_IMAGE
+
+docker login --username $DOCKER_REGISTRY_USR --password $DOCKER_REGISTRY_PSW docker-registry.umusic.com
+docker pull $DOCKER_IMAGE
+docker rm -f umgc_ui_library || true
+docker create --name umgc_ui_library $DOCKER_IMAGE
+rm -rf /tmp/umgc_ui_library
+mkdir -p /tmp/umgc_ui_library
+docker cp umgc_ui_library:/usr/share/nginx/html /tmp/umgc_ui_library/
+docker rm -f umgc_ui_library || true
+cd /tmp/umgc_ui_library/html
+aws s3 sync --delete . s3://aws58-central-ui-storybook/
+rm -rf /tmp/umgc_ui_library
+
+if [[ ! -z "$CLOUDFRONT_DISTRIBUTION_ID" ]]; then
+	aws cloudfront \
+		create-invalidation \
+		--distribution-id $CLOUDFRONT_DISTRIBUTION_ID \
+		--paths '/*'
+fi

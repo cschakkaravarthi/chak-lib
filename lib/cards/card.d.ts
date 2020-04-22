@@ -1,0 +1,42 @@
+import { FC } from 'react';
+import { ArticleCardProps } from './articleCard';
+import { ArticleCardFeaturedProps } from './articleCardFeatured';
+import { EventCardProps } from './eventCard';
+import { ListCardProps } from './eventCardList';
+import { ArticleCardFullProps } from './articleCardFull';
+import { EventCardFullProps } from './eventCardFull';
+import { DepartmentCardProps } from './departmentCard';
+import { EmployeeServCardProps } from './employeeServCard';
+import { NotificationCardProps } from './notificationCard';
+import { ArticleSearchCardProps } from './articleSearchCard';
+import { EventSearchCardProps } from './eventSearchCard';
+import { PeopleSearchCardProps } from './peopleSearchCard';
+import { IndividualPersonCardProps } from './individualPersonCard';
+import { MinimalCardProps } from './minimalCard';
+import { CardMapProps } from './cardMap';
+import { MinimalNewsListProps } from './newsMinimalList';
+import { NewsListEmbeddedProps } from './newsListEmbbedded';
+import { ContentWrapperProps } from '..';
+import { SearchNoResultCardProps } from './searchNoResultCard';
+import { CardsListContainerProps } from './cardsListContainer';
+import { PeopleCardProps, ContactMeCardProps, GetToKnowMeCardProps } from '../interfaces';
+import { OfficesCardContainerProps } from './officesListContainer';
+import { KnowledgeBaseSearchCardProps } from './knowledgeBaseSearchCard';
+import { TechCatalogSearchCardProps } from './techCatalogSearchCard';
+import { LinkSearchCardProps } from './linkSearchCard';
+import { DocumentSearchCardProps } from './documentSearchCard';
+import { DepartmentSearchCardProps } from './departmentSearchCard';
+import { OfficeSearchCardProps } from './officeSearchCard';
+import { PageSearchCardProps } from './pageSearchCard';
+import { AppreciationCardNotificationProps } from './appreciationCardNotification';
+import { BrandsLabelsCardProps } from './brandsLabels';
+import { CreateAppreciationCardProps } from './createAppreciationCard';
+import { AppreciationCardProps } from './appreciationCard';
+import { AppreciationCardThumbnailProps } from './appreciationCardThumbnail';
+import '../../scss/_card.scss';
+export interface CardProps extends ArticleCardProps, AppreciationCardProps, CreateAppreciationCardProps, AppreciationCardNotificationProps, AppreciationCardThumbnailProps, ArticleCardFeaturedProps, ArticleCardFullProps, IndividualPersonCardProps, EventCardProps, ListCardProps, MinimalCardProps, CardMapProps, CardsListContainerProps, NotificationCardProps, EventCardFullProps, EmployeeServCardProps, DepartmentCardProps, ArticleSearchCardProps, EventSearchCardProps, PeopleSearchCardProps, PeopleCardProps, ContactMeCardProps, GetToKnowMeCardProps, NewsListEmbeddedProps, ContentWrapperProps, MinimalNewsListProps, OfficesCardContainerProps, SearchNoResultCardProps, KnowledgeBaseSearchCardProps, TechCatalogSearchCardProps, LinkSearchCardProps, DocumentSearchCardProps, DepartmentSearchCardProps, OfficeSearchCardProps, PageSearchCardProps, BrandsLabelsCardProps {
+    type?: string;
+    variant?: string;
+}
+export declare const Card: FC<CardProps>;
+//# sourceMappingURL=card.d.ts.map

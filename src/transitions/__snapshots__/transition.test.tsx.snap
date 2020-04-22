@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuSlideTransition should render correctly 1`] = `
+<CSSTransition
+  classNames="slide-menu"
+  in={true}
+  timeout={300}
+  unmountOnExit={true}
+>
+  <p>
+    Some content in the menu
+  </p>
+</CSSTransition>
+`;

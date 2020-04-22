@@ -1,0 +1,124 @@
+@import 'modules';
+
+// Don't allow the screen to get any narrower than we are comfortable with.
+body {
+  min-width: $site-min-width;
+  background-color: $gray-100;
+}
+
+// Reset button styles. We will apply styles if we want them.
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/utilities';
+
+.gray-600 {
+  color: color($grays, '600');
+}
+
+.gray-500 {
+  color: color($grays, '500');
+}
+
+.border-gray-450 {
+  border-color: $gray-450 !important;
+}
+
+.font-size-xs {
+  font-size: $font-size-xs;
+}
+
+.font-size-sm {
+  font-size: $font-size-sm;
+}
+
+.font-size-base {
+  font-size: $font-size-base;
+}
+
+.font-size-lg {
+  font-size: $font-size-lg;
+}
+
+.font-size-xl {
+  font-size: $font-size-xl;
+}
+
+.font-size-md {
+  font-size: $font-size-md;
+}
+
+.font-size-title {
+  font-size: $font-size-title;
+}
+
+.font-size-20 {
+  font-size: $font-size-20;
+}
+
+.text-decoration-underline {
+  text-decoration: $text-decoration-underline;
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// @TODO: Organize this.
+.container {
+  max-width: 1200px !important;
+
+  @include media-height-breakpoint-down(1000px) {
+    max-width: 1050px !important;
+  }
+
+  @include media-height-breakpoint-down(850px) {
+    max-width: 942px !important;
+  }
+}
+
+blockquote {
+  position: relative;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+blockquote::before {
+  content: '“';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 4rem;
+  color: $gray-500;
+}
+
+blockquote::after {
+  content: '”';
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  font-size: 4rem;
+  color: $gray-500;
+  height: 3rem;
+}

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuickTools should render correctly 1`] = `
+<ForwardRef
+  body={false}
+  className="py-4 px-3 flex-column justify-content-between h-100 rounded-0"
+>
+  <ForwardRef
+    className="font-weight-bold text-capitalize text-condensed font-size-base mb-4"
+  >
+    Something's Broken!
+  </ForwardRef>
+  <linkAction>
+    <u
+      className="text-upper gray-600 font-size-sm letter-spacing"
+    >
+      Create an i.t. ticket
+    </u>
+  </linkAction>
+</ForwardRef>
+`;
+
+exports[`QuickTools should render correctly 2`] = `
+<ForwardRef
+  body={false}
+  className="py-4 px-3 flex-column justify-content-between h-100 rounded-0"
+>
+  <ForwardRef
+    className="font-weight-bold text-capitalize text-condensed font-size-base mb-4"
+  >
+    Self-Service Password Reset
+  </ForwardRef>
+  <linkAction>
+    <u
+      className="text-upper gray-600 font-size-sm letter-spacing"
+    >
+      Reset Password
+    </u>
+  </linkAction>
+</ForwardRef>
+`;
+
+exports[`QuickTools should render correctly 3`] = `
+<ForwardRef
+  body={false}
+  className="py-4 px-3 flex-column justify-content-between h-100 rounded-0"
+>
+  <ForwardRef
+    className="font-weight-bold text-capitalize text-condensed font-size-base mb-4"
+  >
+    Time off request
+  </ForwardRef>
+  <linkAction>
+    <u
+      className="text-upper gray-600 font-size-sm letter-spacing"
+    >
+      Request time off
+    </u>
+  </linkAction>
+</ForwardRef>
+`;
+
+exports[`QuickTools should render correctly 4`] = `
+<ForwardRef
+  body={false}
+  className="py-4 px-3 flex-column justify-content-between h-100 rounded-0"
+>
+  <ForwardRef
+    className="font-weight-bold text-capitalize text-condensed font-size-base mb-4"
+  >
+    Important Contacts
+  </ForwardRef>
+  <linkAction>
+    <u
+      className="text-upper gray-600 font-size-sm letter-spacing"
+    >
+      Security
+    </u>
+  </linkAction>
+  <linkAction>
+    <u
+      className="text-upper gray-600 font-size-sm letter-spacing"
+    >
+      Facilities
+    </u>
+  </linkAction>
+</ForwardRef>
+`;

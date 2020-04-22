@@ -1,0 +1,1 @@
+{"version":3,"file":"partition.js","sourceRoot":"","sources":["../../src/components/partition.tsx"],"names":[],"mappings":";;;;;AAAA,gDAAkC;AAOrB,QAAA,SAAS,GAAuB,UAAA,KAAK;IAChD,OAAO,CACL,0CAAK,SAAS,EAAE,KAAK,CAAC,SAAS,CAAC,CAAC,CAAC,cAAY,KAAK,CAAC,SAAW,CAAC,CAAC,CAAC,UAAU;QAC1E,wCAAG,SAAS,EAAC,qDAAqD,IAAE,KAAK,CAAC,OAAO,CAAK,CAClF,CACP,CAAC;AACJ,CAAC,CAAC"}

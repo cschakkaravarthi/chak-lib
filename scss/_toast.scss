@@ -1,0 +1,56 @@
+@import 'modules';
+
+.toast {
+  height: rhythm(15);
+  width: 100%;
+  padding: rhythm(0);
+  margin: rhythm(0);
+  text-align: center;
+  visibility: hidden;
+  color: $white;
+  padding: rhythm(5);
+  position: fixed;
+  z-index: 9999;
+  left: rhythm(0);
+  bottom: rhythm(0);
+  font-size: $font-size-base;
+  font-weight: bold;
+  font-family: $font-family-condensed;
+
+  &.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+}
+
+.toast-success {
+  background-color: $dark-turquoise;
+}
+
+.toast-error {
+  background-color: $red;
+}
+
+@keyframes fadein {
+  from {
+    bottom: -30px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 0;
+    opacity: 1;
+  }
+
+  to {
+    bottom: -30px;
+    opacity: 0;
+  }
+}

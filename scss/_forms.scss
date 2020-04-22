@@ -1,0 +1,258 @@
+@import 'modules';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/input-group';
+
+.search-form {
+  padding-left: $side-menu-xs-to-md-left-spacing;
+
+  @include media-breakpoint-up(xl) {
+    padding: $side-menu-lg-spacing;
+  }
+
+  .btn {
+    padding: rhythm(1);
+    border: 0;
+  }
+
+  .form-control {
+    background: transparent;
+    border: 0;
+    color: $white;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .input-group {
+    border-bottom: 1px solid $white;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+
+  .btn-outline-secondary:focus {
+    box-shadow: none;
+  }
+
+}
+
+/*** Auto suggest styles ***/
+.auto-suggest-form {
+  flex: 1;
+  padding-left: $side-menu-xs-to-md-left-spacing;
+  height: rhythm(20);
+
+  @include media-breakpoint-up(xl) {
+    padding: $side-menu-lg-spacing;
+    height: rhythm(20);
+  }
+
+  @include media-breakpoint-up(xs) {
+    padding-left: $side-menu-xs-to-md-left-spacing;
+    padding-right: rhythm(8);
+    height: rhythm(12);
+  }
+
+  .btn {
+    padding-right: rhythm(1);
+  }
+
+  .input-group {
+    border-bottom: $auto-suggest-input-group-border-bottom solid $white;
+  }
+
+  .react-autosuggest__input {
+    background: transparent;
+    border: 0;
+    color: $white;
+    width: 100%;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+}
+
+.mobile-search-bar {
+  color: $gray-700 !important;
+
+  .input-group {
+    border: 1px solid $gray-500;
+  }
+
+  .react-autosuggest__input {
+    width: 100%;
+    border: none;
+    height: rhythm(10);
+    padding: rhythm(3);
+  }
+
+  .input-group-append {
+    button {
+      padding-right: rhythm(3) !important;
+      background-color: $white;
+    }
+
+    button[type='reset'] {
+      padding: $font-size-13 rhythm(3) !important;
+    }
+  }
+
+  .react-autosuggest__suggestions-container--open {
+    width: calc(100% + 88px) !important;
+    margin-left: $auto-suggest-mobile-margin-left !important;
+    top: $auto-suggest-mobile-open-top !important;
+  }
+}
+
+.mobile-search-bar,
+.auto-suggest-form {
+  .react-autosuggest__container {
+    position: relative;
+    display: flex;
+    flex: 1;
+  }
+
+  .react-autosuggest__input--focused {
+    outline: none;
+  }
+
+  .react-autosuggest__suggestions-container {
+    display: none;
+  }
+
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    top: $auto-suggest-open-top;
+    margin-left: $auto-suggest-margin-left;
+    width: calc(100% + 70px);
+    border: $auto-suggest-border solid $gray-600;
+    background-color: $white;
+    border-bottom-left-radius: $auto-suggest-open-padding;
+    border-bottom-right-radius: $auto-suggest-open-padding;
+    z-index: 3;
+  }
+
+  .react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: $react-autosuggest-suggestion-padding-top-bottom $react-autosuggest-suggestion-padding-right-left;
+  }
+
+  .react-autosuggest__suggestion--highlighted {
+    background-color: $gray-500;
+  }
+}
+
+.sliding-menu-auto-suggest {
+  overflow: visible !important;
+}
+
+/*** GenericAutoSuggest styles ***/
+.generic-auto-suggest {
+  // This styling is required exactly like this, as it's the style
+  // React bootstrap gives to an input in a form group
+  .react-autosuggest__input {
+    display: block;
+    width: 100%;
+    height: rhythm(7.6);
+    padding: 0.375rem 0.75rem;
+    font-size: $font-size-md;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $gray-700;
+    background-color: $white;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    width: 96%;
+    border: $auto-suggest-border solid $gray-600;
+    background-color: $white;
+    border-bottom-left-radius: $auto-suggest-open-padding;
+    border-bottom-right-radius: $auto-suggest-open-padding;
+    z-index: 3;
+  }
+
+  .react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: rhythm(1);
+  }
+
+  .react-autosuggest__suggestion--highlighted {
+    background-color: $gray-100;
+  }
+}
+
+
+/* User Profile form styles */
+
+.form-user-description {
+  .left-label-checkbox label {
+    color: $gray-500;
+    font-size: $font-size-sm;
+  }
+
+  textarea {
+    font-size: $font-size-sm;
+  }
+
+  input.form-control,
+  select.form-control {
+    border-radius: rhythm(0);
+    font-size: $font-size-md;
+  }
+
+  .day-dropdown {
+    padding-top: rhythm(7);
+  }
+}
+
+.form-user-desc-subtitle {
+  @include media-breakpoint-down(md) {
+    line-height: 1.025rem;
+    margin-top: rhythm(1);
+  }
+}
+
+.align-text-center {
+  width: rhythm(80);
+
+  @include media-breakpoint-down(sm) {
+    width: rhythm(60);
+  }
+}
+
+.paddingRight {
+  padding-right: rhythm(3) !important;
+
+  @include media-breakpoint-down(sm) {
+    padding-right: rhythm(0) !important;
+  }
+}
+
+.paddingLeft {
+  padding-left: rhythm(3) !important;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: rhythm(0) !important;
+  }
+}

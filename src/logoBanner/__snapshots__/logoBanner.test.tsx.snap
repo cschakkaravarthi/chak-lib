@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoBanner should render correctly 1`] = `
+<div
+  className="banner-props"
+  style={
+    Object {
+      "backgroundImage": "url(test-file-stub)",
+    }
+  }
+>
+  <div
+    className="banner-props dark-linear-gradient d-flex justify-content-end"
+  >
+    <div
+      className="d-flex align-items-center mx-lg-5 mx-sm-5 mx-3"
+    >
+      <ForwardRef
+        className="logo-props"
+        fluid={false}
+        rounded={true}
+        roundedCircle={false}
+        src="test-file-stub"
+        thumbnail={false}
+      />
+    </div>
+  </div>
+</div>
+`;

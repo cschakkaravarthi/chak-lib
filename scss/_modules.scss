@@ -1,0 +1,188 @@
+//
+// Variable Overrides
+//
+
+$font-size-base: 1.125rem;
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-title: 1.5rem;
+$font-size-lg: 1.75rem;
+$font-size-xl: 2rem;
+$font-size-13: 0.8125rem;
+$font-size-20: 1.25rem;
+
+$font-family-sans-serif: 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-condensed: 'Roboto Condensed', $font-family-sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-weight-bold: 700;
+
+$red: #c43030;
+
+$white: #fff;
+
+$black: #000;
+
+$gray-700: #2b2b2b;
+$gray-650: #3d3d3d; // @TODO: Fix this.
+$gray-600: #757575;
+$gray-500: #a4a4a4;
+$gray-450: #b3b3b3;
+$gray-200: #e0e0e0;
+$gray-100: #f8f8f8;
+
+$yellow: #f4ad3d;
+
+$primary-light-blue: #deedf8;
+$light-blue: #4baff8;
+
+$dark-turquoise: #55bca6;
+
+$skeleton-border-color: #a4a4a4;
+
+$link-color: $gray-700;
+
+$grays: (
+  '700': $gray-700,
+  '600': $gray-600,
+  '500': $gray-500
+);
+
+$shadow-color: rgba(0, 0, 0, 0.2);
+//
+// Bootstrap modules
+//
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+//
+// Function Overrides
+//
+
+@function color($map: $grays, $key: '100') {
+  @return map-get($map, $key);
+}
+
+// @TODO: This is a very simple rhythm for the sake of consistency. We probably want to make this more dynamic.
+@function rhythm($multiple: 1) {
+  @return $multiple * 5px;
+}
+
+// Media of at most the maximum breakpoint height. No query for the largest breakpoint.
+// Makes the @content apply to the given breakpoint and narrower.
+@mixin media-height-breakpoint-down($max) {
+  @if $max {
+    @media (max-height: $max) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}
+
+// @TODO: Make a POC of what type of nomenclature to use 'px' s or 'rem' s
+$btn-border-size: 2.5px;
+$btn-letter-spacing: 1.4px;
+
+$checkbox-height: 15px;
+$checkbox-width: 15px;
+$checkbox-size: 12px;
+$checkbox-tick-content: '\2713';
+$checkbox-border: 1px;
+$checkbox-border-radius: 3px;
+
+$card-border-size: 3px;
+$card-event-border-color: $yellow;
+$card-notification-border-alert: $red;
+$card-notification-border-news: $light-blue;
+$card-notification-border-approval: $light-blue;
+$card-notification-border-events: $yellow;
+$card-notification-summary-height: 45px;
+$card-article-border-color: $light-blue;
+$cards-list-border-color: $dark-turquoise;
+$card-event-border-size: $card-border-size;
+$card-article-border-size: $card-border-size;
+$card-standard-border-color: $dark-turquoise;
+$card-department-border-color: $dark-turquoise;
+$card-department-border-size: $card-border-size;
+$card-notification-border-maintenance: $dark-turquoise;
+$card-people-border-size: $card-border-size;
+$card-people-border-color: $dark-turquoise;
+$card-search-no-result-border-size: $card-border-size;
+$card-search-no-result-border-color: $light-blue;
+$card-page-content-border-color: $dark-turquoise;
+$card-page-content-border-size: $card-border-size;
+$card-page-resources-border-color: $dark-turquoise;
+$card-page-resources-border-size: $card-border-size;
+$card-offices-border-size: $card-border-size;
+$card-offices-border-color: $dark-turquoise;
+$card-knowledge-base-search-result-border-size: $card-border-size;
+$card-knowledge-base-search-result-border-color: $dark-turquoise;
+$card-tech-catalog-search-result-border-size: $card-border-size;
+$card-tech-catalog-search-result-border-color: $dark-turquoise;
+$card-link-search-result-border-size: $card-border-size;
+$card-link-search-result-border-color: $dark-turquoise;
+$card-document-search-border-size: $card-border-size;
+$card-document-search-border-color: $dark-turquoise;
+$card-department-search-border-size: $card-border-size;
+$card-department-search-border-color: $dark-turquoise;
+$card-office-search-border-size: $card-border-size;
+$card-office-search-border-color: $dark-turquoise;
+$card-page-search-border-size: $card-border-size;
+$card-page-search-border-color: $dark-turquoise;
+$card-people-search-border-size: $card-border-size;
+$card-people-search-border-color: $dark-turquoise;
+$card-people-search-border-color-skeleton: $skeleton-border-color;
+$card-article-search-border-size: $card-border-size;
+$card-article-search-border-color: $light-blue;
+$card-event-search-border-size: $card-border-size;
+$card-event-search-border-color: $yellow;
+
+
+
+$navigation-logo-size: 30px;
+$navigation-border-radius: 50%;
+$navigation-full-black: $black;
+$navigation-user-image-size: 30px;
+$navigation-notification-count-size: 15px;
+$navigation-navbar-standard-padding: $navbar-padding-y * 2 $navbar-padding-x $navbar-padding-y * 2 $navbar-padding-x !important;
+
+$navbar-background-color: $gray-700;
+$navbar-side-width: 350px;
+$navbar-top-height: 75px;
+
+$header-logo-width: 175px;
+$banner-height: 150px;
+
+$site-min-width: 320px;
+
+$side-menu-xs-to-md-left-spacing: 1rem;
+$side-menu-lg-spacing: rhythm(1) rhythm(8);
+
+$opacity-1: 1;
+
+$auto-suggest-open-padding: 4px;
+$auto-suggest-open-top: 34px;
+$auto-suggest-margin-left: -42px;
+$auto-suggest-border: 1px;
+$auto-suggest-input-group-border-bottom: 1px;
+$auto-suggest-mobile-margin-left: -1px;
+$auto-suggest-mobile-open-top: 46px;
+
+$react-autosuggest-suggestion-padding-top-bottom: rhythm(2);
+$react-autosuggest-suggestion-padding-right-left: rhythm(4);
+
+$notification-margin-top: 0.6rem;
+$card-manual-notification-standard-cut-summary-height: 2.7rem;
+
+$letter-spacing-01rem: 0.1rem;
+
+$text-decoration-underline: underline;
+
+$short-description-line-count: 13;

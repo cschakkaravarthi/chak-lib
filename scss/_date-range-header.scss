@@ -1,0 +1,13 @@
+@import 'modules';
+
+.date-range-header {
+  border-bottom: 0.1rem solid $gray-500;
+
+  p:first-child {
+    flex: 2;
+  }
+
+  p:nth-child(2) {
+    flex: 1;
+  }
+}

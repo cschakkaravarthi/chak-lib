@@ -1,0 +1,82 @@
+@import 'modules';
+@import '~bootstrap/scss/modal';
+
+.modal-xl {
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+.modal-content {
+  border-radius: 0 !important;
+}
+
+.modal-title {
+  display: none !important;
+}
+
+// Overrides the styles of the all links overlay.
+.nav-overlay,
+.all-links-backdrop {
+  right: 0 !important;
+  margin-top: $navbar-top-height !important;
+  padding-bottom: $navbar-top-height !important;
+
+  @include media-breakpoint-up(xl) {
+    left: unset !important;
+    margin-top: unset !important;
+    padding-bottom: unset !important;
+    width: calc(100% - #{$navbar-side-width}) !important;
+  }
+}
+
+.confirmation-modal,
+.alert-modal,
+.reject-modal {
+  @include media-breakpoint-up(sm) {
+    button {
+      width: rhythm(30);
+      height: rhythm(10);
+    }
+  }
+
+  .modal-content {
+    border-radius: rhythm(1) !important;
+  }
+
+  &.modal {
+    display: flex !important;
+    height: 100%;
+    align-items: center;
+    padding-left: rhythm(70);
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 0;
+    }
+
+    .modal-dialog {
+      margin: auto;
+      
+      @include media-breakpoint-down(xs) {
+        padding: rhythm(2);
+      }
+    }
+  }
+}
+
+.confirmation-modal,
+.alert-modal {
+  @include media-breakpoint-up(sm) {
+    .modal-footer {
+      padding: rhythm(3) rhythm(13) 0 rhythm(13);
+    }
+  }
+}
+
+.reject-modal {
+  @include media-breakpoint-up(sm) {
+    .modal-footer {
+      padding: 0;
+    }
+  }
+}
+

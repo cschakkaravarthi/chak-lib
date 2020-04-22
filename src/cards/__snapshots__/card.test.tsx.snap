@@ -1,0 +1,800 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render correctly for Department card 1`] = `
+<Unknown
+  VisitLink={[Function]}
+  summary="Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests."
+  title="Communications"
+  type="department"
+  variant="standard"
+/>
+`;
+
+exports[`Card should render correctly for Events card list embedded 1`] = `
+<Unknown
+  AddToCalenderLink={[Function]}
+  MainLink={[Function]}
+  categories={
+    Array [
+      Object {
+        "drupal_id": 123,
+        "title": "Test",
+      },
+      Object {
+        "drupal_id": 456,
+        "title": "Another Test",
+      },
+    ]
+  }
+  date="September 28, 2019"
+  location="Los Angeles, CA"
+  title="Industry Event Title"
+  type="event"
+  variant="embedded"
+/>
+`;
+
+exports[`Card should render correctly for Events list card 1`] = `
+<Unknown
+  HeaderLink={[Function]}
+  headerLinkText="All Events"
+  title="Events"
+  topBorder="yellow"
+  type="cardsInContainer"
+  variant="standard"
+>
+  <Unknown
+    AddToCalenderLink={[Function]}
+    MainLink={[Function]}
+    categories={
+      Array [
+        Object {
+          "drupal_id": 123,
+          "title": "Test",
+        },
+        Object {
+          "drupal_id": 456,
+          "title": "Another Test",
+        },
+      ]
+    }
+    date="September 28, 2019"
+    location="Los Angeles, CA"
+    title="Industry Event Title"
+    type="event"
+    variant="embedded"
+  />
+  <Unknown
+    AddToCalenderLink={[Function]}
+    MainLink={[Function]}
+    categories={
+      Array [
+        Object {
+          "drupal_id": 123,
+          "title": "Test",
+        },
+        Object {
+          "drupal_id": 456,
+          "title": "Another Test",
+        },
+      ]
+    }
+    date="September 28, 2019"
+    location="Woodland Hills, CA"
+    title="UMG Event with an Even Longer Title"
+    type="event"
+    variant="embedded"
+  />
+</Unknown>
+`;
+
+exports[`Card should render correctly for Events search card  1`] = `
+<Unknown
+  AddToCalenderLink={[Function]}
+  MainLink={[Function]}
+  date="September 28, 2019"
+  location="Los Angeles, CA"
+  title="Industry Event Title"
+  type="event"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly for Peoples profile card 1`] = `
+<Unknown
+  center="USIC"
+  companyName="Company Name"
+  department="Royalties IT"
+  desk="1A"
+  handleChangePhoto={[Function]}
+  handleDeletePhoto={[Function]}
+  hasProfilePhoto={true}
+  imageUrl="https://media.licdn.com/dms/image/C4D03AQHgxarEg1Cvuw/ profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta& t=thBaLX-J3-MoHdpJ3MvombNd4LOKfMHNRPLlmopM6KI"
+  isCurrentUser={true}
+  isUploading={false}
+  location="Woodland Hills, CA"
+  title="Sr. Director, Business Process Management"
+  type="people"
+  variant="profile"
+/>
+`;
+
+exports[`Card should render correctly for Peoples search card 1`] = `
+<Unknown
+  MailLink={[Function]}
+  MainLink={[Function]}
+  ZoomLink={[Function]}
+  companyName="UMG"
+  designation="software developer"
+  imageUrl="test url"
+  mail="testusser@umusic.com"
+  title="test title"
+  type="people"
+  variant="search"
+  workLocation="Woodland Hills, LA"
+/>
+`;
+
+exports[`Card should render correctly for Service card 1`] = `
+<Unknown
+  VisitLink={[Function]}
+  imageUrl="https://picsum.photos/500/500?grayscale"
+  linkText="BACKSTAGE"
+  summary="Nam non sem vel urna porta tempor at eu dui. Cras ac eros consectetur, pharetra ipsum quis, laoreet velit."
+  title="Training"
+  type="employeeServ"
+  variant="standard"
+/>
+`;
+
+exports[`Card should render correctly for card list container 1`] = `
+<Unknown
+  MainLink={[Function]}
+  title="New notifications"
+  type="cardsInContainer"
+  variant="standard"
+>
+  <Unknown
+    MainLink={[Function]}
+    categories={
+      Array [
+        Object {
+          "drupal_id": 123,
+          "title": "Test",
+        },
+        Object {
+          "drupal_id": 456,
+          "title": "Another Test",
+        },
+      ]
+    }
+    dateTime="October 23, 2019 16:28 PM PDT"
+    isNew={true}
+    notificationType="maintenence"
+    summary="Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests."
+    title="Emergency Alert - Los Angeles Area Earthquake"
+    type="notification"
+    variant="standard"
+  />
+  <Unknown
+    MainLink={[Function]}
+    categories={
+      Array [
+        Object {
+          "drupal_id": 123,
+          "title": "Test",
+        },
+        Object {
+          "drupal_id": 456,
+          "title": "Another Test",
+        },
+      ]
+    }
+    dateTime="October 23, 2019 16:28 PM PDT"
+    isNew={false}
+    notificationType="alert"
+    summary="Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests."
+    title="Emergency Alert - Los Angeles Area Earthquake"
+    type="notification"
+    variant="standard"
+  />
+</Unknown>
+`;
+
+exports[`Card should render correctly for contacts card 1`] = `
+<Unknown
+  addToContactImage="test-file-stub"
+  email="luz.lacson@umusic.com"
+  handleAddToContacts={[Function]}
+  handleClick={[Function]}
+  isCurrentUser={true}
+  mobile="818.264.4243"
+  office="818.212.0897"
+  title="Contact Me"
+  type="contactMe"
+  variant="standard"
+/>
+`;
+
+exports[`Card should render correctly for department card 1`] = `
+<Unknown
+  VisitLink={[Function]}
+  summary="Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests."
+  title="Communications"
+  type="department"
+  variant="standard"
+/>
+`;
+
+exports[`Card should render correctly for get to know me card 1`] = `
+<Unknown
+  aboutMe="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  anniversaryDay="1"
+  anniversaryMonth="July"
+  birthDay="13"
+  birthMonth="January"
+  currentlyWorking="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  handleClick={[Function]}
+  isCurrentUser={false}
+  languagesSpoken="English, Spanish"
+  nickname="Chi"
+  professionalSkills="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+  title="Get to know me"
+  type="getToKnowMe"
+  variant="standard"
+/>
+`;
+
+exports[`Card should render correctly for my contacts card 1`] = `
+<Unknown
+  contactPic="https://media.licdn.com/dms/image/C4D03AQHgxarEg1Cvuw/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=thBaLX-J3-MoHdpJ3MvombNd4LOKfMHNRPLlmopM6KI"
+  email="first.lastname@umusic.com"
+  handleClick={[Function]}
+  isCurrentUser={false}
+  mobile="818.264.4243"
+  office="818.212.0897"
+  title="First Lastname"
+  type="contactMe"
+  variant="profile"
+/>
+`;
+
+exports[`Card should render correctly for notification card 1`] = `
+<Unknown
+  categories={
+    Array [
+      Object {
+        "drupal_id": 123,
+        "title": "Test",
+      },
+      Object {
+        "drupal_id": 456,
+        "title": "Another Test",
+      },
+    ]
+  }
+  dateTime="October 23, 2019 16:28 PM PDT"
+  isNew={true}
+  notificationType="maintenence"
+  summary="Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests. Global Communications oversees all aspects of external and internal communications relating to Universal Music Group and its many businesses and interests."
+  title="Emergency Alert - Los Angeles Area Earthquake"
+  type="notification"
+  variant="standard"
+/>
+`;
+
+exports[`Card should render correctly for system and applications standard card 1`] = `
+<Unknown
+  appOwnerName="First Lastname"
+  bodySummary="Cras ac eros consectetur, pharetra ipsum quis, laoreet velit."
+  businessOwnerName="First Lastname"
+  technicalContactName="First Lastname"
+  title="AirBnb for Work"
+  type="systemAndApplication"
+  url="https://www.google.com"
+  variant="standard"
+/>
+`;
+
+exports[`Card should render correctly for type Article 1`] = `
+<Unknown
+  MainLink={[Function]}
+  categories={
+    Array [
+      Object {
+        "drupal_id": 123,
+        "title": "Test",
+      },
+      Object {
+        "drupal_id": 456,
+        "title": "Another Test",
+      },
+    ]
+  }
+  date="July 20, 2019"
+  imageUrl="https://www.universalmusic.com/wp-content/uploads/2019/09/Alicia-Keys-UMPG-credit-James-Bailey.jpg"
+  likes={1}
+  title="Alicia Keys Signs with Universal Music Publishing Group"
+  type="article"
+/>
+`;
+
+exports[`Card should render correctly for type Article and variant featured 1`] = `
+<Unknown
+  MainLink={[Function]}
+  categories={
+    Array [
+      Object {
+        "drupal_id": 123,
+        "title": "Test",
+      },
+      Object {
+        "drupal_id": 456,
+        "title": "Another Test",
+      },
+    ]
+  }
+  date="July 20, 2019"
+  imageUrl="https://www.universalmusic.com/wp-content/uploads/2019/09/Alicia-Keys-UMPG-credit-James-Bailey.jpg"
+  likes={1}
+  summary="Universal Music Publishing Group (UMPG) today announced that 15-time Grammy Award-winning artist, songwriter, and record producer Alicia Keys has been signed to an exclusive administration deal."
+  title="Alicia Keys Signs with Universal Music Publishing Group"
+  type="article"
+  variant="featured"
+/>
+`;
+
+exports[`Card should render correctly for type Article and variant full 1`] = `
+<Unknown
+  MainLink={[Function]}
+  categories={
+    Array [
+      Object {
+        "drupal_id": 123,
+        "title": "Test",
+      },
+      Object {
+        "drupal_id": 456,
+        "title": "Another Test",
+      },
+    ]
+  }
+  content={
+    <React.Fragment>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipiscing elit sociis sodales, dis dictumst molestie risus. Habitant facilisi penatibus natoque erat ac pharetra ultricies tempor ad, eget non proin purus torquent aliquet enim nisl nulla, vehicula cursus inceptos eleifend sociosqu laoreet donec augue. Suspendisse fusce viverra commodo pellentesque feugiat nam integer rhoncus, sem quam est nulla tortor massa inceptos hendrerit, potenti purus sapien mus himenaeos vel molestie.
+      </p>
+      <p>
+        Sollicitudin placerat mi dapibus urna varius class eget vulputate, tristique maecenas habitasse etiam netus taciti rhoncus phasellus duis, eros laoreet blandit quis ornare sociis sociosqu. Accumsan enim suspendisse platea donec habitant nunc sapien phasellus molestie metus cum posuere, torquent luctus vitae penatibus erat sagittis congue at dignissim class natoque, dictumst et curae condimentum tellus porta purus eu mi aenean justo. Fermentum hendrerit nisi hac tortor aliquet nibh tempor phasellus inceptos himenaeos netus, sed est augue dui praesent ullamcorper lectus vehicula lobortis non, metus magnis conubia potenti eu facilisis tincidunt a nunc volutpat.
+      </p>
+    </React.Fragment>
+  }
+  date="July 20, 2019"
+  imageUrl="https://www.universalmusic.com/wp-content/uploads/2019/09/Alicia-Keys-UMPG-credit-James-Bailey.jpg"
+  subtitle="UMPG to Globally Administer Rights to Alicia Keys’ Iconic Song Catalog"
+  title="Alicia Keys Signs with Universal Music Publishing Group"
+  type="article"
+  variant="full"
+/>
+`;
+
+exports[`Card should render correctly for type Article search 1`] = `
+<Unknown
+  MainLink={[Function]}
+  content={
+    <React.Fragment>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipiscing elit sociis sodales, dis dictumst molestie risus. Habitant facilisi penatibus natoque erat ac pharetra ultricies tempor ad, eget non proin purus torquent aliquet enim nisl nulla, vehicula cursus inceptos eleifend sociosqu laoreet donec augue. Suspendisse fusce viverra commodo pellentesque feugiat nam integer rhoncus, sem quam est nulla tortor massa inceptos hendrerit, potenti purus sapien mus himenaeos vel molestie.
+      </p>
+      <p>
+        Sollicitudin placerat mi dapibus urna varius class eget vulputate, tristique maecenas habitasse etiam netus taciti rhoncus phasellus duis, eros laoreet blandit quis ornare sociis sociosqu. Accumsan enim suspendisse platea donec habitant nunc sapien phasellus molestie metus cum posuere, torquent luctus vitae penatibus erat sagittis congue at dignissim class natoque, dictumst et curae condimentum tellus porta purus eu mi aenean justo. Fermentum hendrerit nisi hac tortor aliquet nibh tempor phasellus inceptos himenaeos netus, sed est augue dui praesent ullamcorper lectus vehicula lobortis non, metus magnis conubia potenti eu facilisis tincidunt a nunc volutpat.
+      </p>
+    </React.Fragment>
+  }
+  title="Alicia Keys Signs with Universal Music Publishing Group"
+  type="article"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly for type Seach no result 1`] = `
+<Unknown
+  MainLink={[Function]}
+  description="Browse the latest news regarding artist, UMG events, and UMG news."
+  title="NEWS"
+  type="search"
+  variant="noResult"
+/>
+`;
+
+exports[`Card should render correctly for type appreciation and variant create 1`] = `
+<Unknown
+  onClick={[Function]}
+  title="CREATE CARD"
+  type="appreciation"
+  variant="create"
+/>
+`;
+
+exports[`Card should render correctly for type appreciation and variant notification 1`] = `
+<Unknown
+  onClick={[Function]}
+  title="Appreciation card notication title"
+  type="appreciation"
+  variant="notification"
+/>
+`;
+
+exports[`Card should render correctly for type department search card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  searchKeyword="part"
+  searchSummary={
+    <React.Fragment>
+      <p>
+        Quam minima autem volupytatem ut optio set distintio quae. Atque quidem beatae cumque.
+      </p>
+    </React.Fragment>
+  }
+  title="Brand Department"
+  type="department"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly for type document search card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  searchKeyword="Title"
+  searchSummary={
+    <React.Fragment>
+      <p>
+        Quam minima autem volupytatem ut optio set distintio quae. Atque quidem beatae cumque.
+      </p>
+    </React.Fragment>
+  }
+  title="Document Title"
+  type="document"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly for type event 1`] = `
+<Unknown
+  AddToCalenderLink={[Function]}
+  MainLink={[Function]}
+  MoreInfoLink={[Function]}
+  categories={
+    Array [
+      Object {
+        "drupal_id": 123,
+        "title": "Test",
+      },
+      Object {
+        "drupal_id": 456,
+        "title": "Another Test",
+      },
+    ]
+  }
+  date="September 28, 2019"
+  imageUrl="https://picsum.photos/500/500?grayscale"
+  location="Los Angeles, CA"
+  title="Industry Event Title"
+  type="event"
+/>
+`;
+
+exports[`Card should render correctly for type eventcard full 1`] = `
+<Unknown
+  AddToCalenderLink={[Function]}
+  MainLink={[Function]}
+  categories={
+    Array [
+      Object {
+        "drupal_id": 123,
+        "title": "Test",
+      },
+      Object {
+        "drupal_id": 456,
+        "title": "Another Test",
+      },
+    ]
+  }
+  content={
+    <React.Fragment>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipiscing elit sociis sodales, dis dictumst molestie risus. Habitant facilisi penatibus natoque erat ac pharetra ultricies tempor ad, eget non proin purus torquent aliquet enim nisl nulla, vehicula cursus inceptos eleifend sociosqu laoreet donec augue. Suspendisse fusce viverra commodo pellentesque feugiat nam integer rhoncus, sem quam est nulla tortor massa inceptos hendrerit, potenti purus sapien mus himenaeos vel molestie.
+      </p>
+      <p>
+        Sollicitudin placerat mi dapibus urna varius class eget vulputate, tristique maecenas habitasse etiam netus taciti rhoncus phasellus duis, eros laoreet blandit quis ornare sociis sociosqu. Accumsan enim suspendisse platea donec habitant nunc sapien phasellus molestie metus cum posuere, torquent luctus vitae penatibus erat sagittis congue at dignissim class natoque, dictumst et curae condimentum tellus porta purus eu mi aenean justo. Fermentum hendrerit nisi hac tortor aliquet nibh tempor phasellus inceptos himenaeos netus, sed est augue dui praesent ullamcorper lectus vehicula lobortis non, metus magnis conubia potenti eu facilisis tincidunt a nunc volutpat.
+      </p>
+    </React.Fragment>
+  }
+  date="Aug 28, 2019, 8:00PM – Aug 29, 2019, 10:00PM"
+  imageUrl="https://picsum.photos/500/300"
+  location="Venue name, Los Angeles, ca"
+  subtitle="Brothers Osborne Lead UMG Artists with Four Nominations"
+  title="2019 CMA Awards Nominations Announced"
+  type="event"
+  variant="full"
+/>
+`;
+
+exports[`Card should render correctly for type knowledge base search card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  authorName="Author Name"
+  date="January 1,2019"
+  searchKeyword="rticl"
+  searchSummary={
+    <React.Fragment>
+      <p>
+        Quam minima autem volupytatem ut optio set distintio quae. Atque quidem beatae cumque.
+      </p>
+    </React.Fragment>
+  }
+  title="Brand Article"
+  type="knowledgeBase"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly for type link search card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  imageSrc="'https://media.licdn.com/dms/image/C4D03AQHgxarEg1Cvuw/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=thBaLX-J3-MoHdpJ3MvombNd4LOKfMHNRPLlmopM6KI'"
+  searchKeyword="Guide"
+  searchSummary={
+    <React.Fragment>
+      <p>
+        Quam minima autem volupytatem ut optio set distintio quae. Atque quidem beatae cumque.
+      </p>
+    </React.Fragment>
+  }
+  title="Branding & Style Guide"
+  type="link"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly for type office search card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  officeAddress={
+    <React.Fragment>
+      <p>
+        21301 Burbank Blvd
+      </p>
+      <p>
+        Woodland Hills, CA 91367
+      </p>
+    </React.Fragment>
+  }
+  searchKeyword="land"
+  title="Woodland Hills"
+  type="office"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly for type page search card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  departmentName="Department Name"
+  searchKeyword="Title"
+  searchSummary={
+    <React.Fragment>
+      <p>
+        Quam minima autem volupytatem ut optio set distintio quae. Atque quidem beatae cumque.
+      </p>
+    </React.Fragment>
+  }
+  title="Page Title"
+  type="page"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly for type page search card 2`] = `
+<Unknown
+  MainLink={[Function]}
+  content={
+    <React.Fragment>
+      <p>
+        Quam minima autem volupytatem ut optio set distintio quae. Atque quidem beatae article cumque.
+      </p>
+    </React.Fragment>
+  }
+  searchKeyword="rti"
+  title="Brand Article"
+  type="article"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly for type people search card 1`] = `
+<Unknown
+  MailLink={[Function]}
+  MainLink={[Function]}
+  ZoomLink={[Function]}
+  addToContactIcon="https://media.licdn.com/dms/image/C4D03AQHgxarEg1Cvuw/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=thBaLX-J3-MoHdpJ3MvombNd4LOKfMHNRPLlmopM6KI"
+  companyName="Company Name"
+  department="Job Title, Department"
+  designation="Designation"
+  handleAddToContacts={[Function]}
+  imageUrl="https://media.licdn.com/dms/image/C4D03AQHgxarEg1Cvuw/profile-displayphoto-shrink_800_800/0?e=1575504000&v=beta&t=thBaLX-J3-MoHdpJ3MvombNd4LOKfMHNRPLlmopM6KI"
+  isCurrentUser={false}
+  mail="brandon.smith@umusic.com"
+  searchKeyword="bran"
+  title="Brandon Smith"
+  type="people"
+  variant="search"
+  workLocation="Woodland Hills, CA, USA"
+/>
+`;
+
+exports[`Card should render correctly for type tech catalog search card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  rate="$99.99"
+  searchKeyword="Title"
+  searchSummary={
+    <React.Fragment>
+      <p>
+        Quam minima autem volupytatem ut optio set distintio quae. Atque quidem beatae cumque.
+      </p>
+    </React.Fragment>
+  }
+  title="Product Title"
+  type="techCatalog"
+  variant="search"
+/>
+`;
+
+exports[`Card should render correctly individual person card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  fullName="Daft Punk"
+  imageUrl="https://consequenceofsound.net/wp-content/uploads/2015/02/screen-shot-2015-02-05-at-1-05-38-pm.png"
+  title="Job Title"
+  type="people"
+  variant="individual"
+/>
+`;
+
+exports[`Card should render correctly the map card 1`] = `
+<Unknown
+  address={
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>21301 Burbank Blvd</p><p>Woodland Hills CA 91367</p>",
+        }
+      }
+    />
+  }
+  addressOnMap="21301 Burbank Blvd Woodland Hills CA 91367"
+  title="Address"
+  topBorder="lightblue"
+  type="map"
+/>
+`;
+
+exports[`Card should render correctly the minimal card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  imageUrl="https://picsum.photos/500/500"
+  title="Minimal Card"
+  type="link"
+  variant="minimal"
+/>
+`;
+
+exports[`Card should render correctly the minimal news list card 1`] = `
+<Unknown
+  title="News"
+  topBorder="lightblue"
+  type="article"
+  variant="newsList"
+>
+  <Unknown
+    MainLink={[Function]}
+    date="September 28, 2019"
+    imageUrl="https://picsum.photos/500/500"
+    title="Industry article Title"
+    type="article"
+    variant="newsListEmbedded"
+  />
+  <Unknown
+    MainLink={[Function]}
+    date="September 28, 2019"
+    imageUrl="https://picsum.photos/500/500"
+    title="UMG Event with an Even Longer Title"
+    type="article"
+    variant="newsListEmbedded"
+  />
+</Unknown>
+`;
+
+exports[`Card should render correctly the news embedded card 1`] = `
+<Unknown
+  MainLink={[Function]}
+  date="September 28, 2019"
+  imageUrl="https://picsum.photos/500/500"
+  title="Industry article Title"
+  type="article"
+  variant="newsListEmbedded"
+/>
+`;
+
+exports[`Card should render correctly the offices list card 1`] = `
+<Unknown
+  VisitLink={[Function]}
+  officeData={
+    Array [
+      Object {
+        "categType": "office",
+        "officeList": Array [
+          Object {
+            "address": "21301 burbank blvdWoodland hills, CA",
+            "title": "Office Name",
+          },
+          Object {
+            "address": "21301 burbank blvdWoodland hills, CA",
+            "title": "Office Name",
+          },
+        ],
+        "placeName": "New York",
+      },
+      Object {
+        "categType": "office",
+        "drupal_id": 2,
+        "officeList": Array [
+          Object {
+            "address": "21301 burbank blvdWoodland hills, CA",
+            "title": "Office Name",
+          },
+          Object {
+            "address": "21301 burbank blvdWoodland hills, CA",
+            "title": "Office Name",
+          },
+        ],
+        "placeName": "Asia",
+      },
+      Object {
+        "categType": "office",
+        "drupal_id": 3,
+        "officeList": Array [
+          Object {
+            "address": "21301 burbank blvdWoodland hills, CA",
+            "title": "Office Name",
+          },
+          Object {
+            "address": "21301 burbank blvdWoodland hills, CA",
+            "title": "Office Name",
+          },
+        ],
+        "placeName": "North America",
+      },
+      Object {
+        "categType": "office",
+        "drupal_id": 4,
+        "officeList": Array [
+          Object {
+            "address": "21301 burbank blvdWoodland hills, CA",
+            "title": "Office Name",
+          },
+          Object {
+            "address": "21301 burbank blvdWoodland hills, CA",
+            "title": "Office Name",
+          },
+        ],
+        "placeName": "Europe",
+      },
+    ]
+  }
+  title=""
+  type="officesListContainer"
+  variant="light"
+/>
+`;

@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  umgc_ui_library:
+    image: docker-registry.umusic.net/central/umgc_ui_library
+    expose:
+      - 80
+    deploy:
+      labels:
+        traefik.enable: "true"
+        traefik.frontend.rule: "Host: $SUBDOMAIN.$ROOT_DOMAIN"
+        traefik.docker.network: web
+        traefik.port: "5000"
+    networks:
+      - web
+
+networks:
+  web:
+    external: true

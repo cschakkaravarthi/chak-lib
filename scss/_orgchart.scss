@@ -1,0 +1,73 @@
+@import 'modules';
+@import '~bootstrap/scss/modal';
+
+$org-chart-child-card-border: 2px;
+$org-chart-width: 80%;
+$org-chart-font-family: Roboto;
+$org-chart-li-top-bottom: 20px;
+$org-chart-li-before-width: 2px;
+
+.org-chart-child-card {
+  width: $org-chart-width;
+  background: $gray-100 no-repeat padding-box;
+  border: $org-chart-child-card-border solid $gray-500;
+  opacity: 1;
+  font-family: $org-chart-font-family;
+  letter-spacing: 0;
+}
+
+.org-chart-parent-card {
+  width: $org-chart-width;
+  background: $gray-700 0% 0% no-repeat padding-box;
+  border: $org-chart-child-card-border solid $gray-700;
+  opacity: 1;
+}
+
+.org-chart-parent-card-font {
+  font-family: $org-chart-font-family;
+  color: $gray-100;
+  opacity: 1;
+}
+
+.org-chart li {
+  padding: rhythm(3) rhythm(1) 0;
+}
+
+.org-chart li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: $org-chart-li-before-width;
+  height: 100%;
+  right: auto;
+  left: rhythm(-4);
+  border-left: $org-chart-child-card-border solid $gray-700;
+  bottom: rhythm(10);
+}
+
+.org-chart li::after {
+  content: '';
+  position: absolute;
+  top: rhythm(7);
+  width: rhythm(5);
+  height: rhythm(4);
+  right: auto;
+  left: rhythm(-4);
+  border-top: $org-chart-child-card-border solid $gray-700;
+}
+
+/*Remove connectors before root*/
+.org-chart > ul > li::before,
+.org-chart > ul > li::after {
+  border: rhythm(0);
+}
+/*Remove connectors after last child*/
+.org-chart li:last-child::before {
+  height: rhythm(7);
+}
+
+.org-chart {
+  button:focus {
+    outline: none;
+  }
+}

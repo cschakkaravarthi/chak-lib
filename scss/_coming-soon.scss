@@ -1,0 +1,31 @@
+@import 'modules';
+
+.coming-soon-page-bg {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.coming-soon-title {
+  text-align: right;
+  color: $white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: $font-weight-light;
+  font-size: rhythm(8);
+  margin-top: rhythm(10);
+  -webkit-font-smooth: antialiased;
+}
+
+@include media-breakpoint-up(md) {
+  .coming-soon-title {
+    font-size: 54px;
+    margin-top: rhythm(20);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .coming-soon-title {
+    font-size: rhythm(12);
+  }
+}

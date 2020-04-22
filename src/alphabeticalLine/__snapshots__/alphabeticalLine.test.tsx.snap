@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Resources should render correctly 1`] = `
+<ForwardRef
+  active={false}
+  className="font-weight-bolder undefined "
+  disabled={false}
+  id="A"
+  onClick={[Function]}
+  type="button"
+  value="A"
+  variant="link"
+>
+  A
+</ForwardRef>
+`;

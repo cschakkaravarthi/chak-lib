@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i|Roboto:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i'); // added for roboto condensed light font used in coming soon page
+@import 'modules';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/buttons';
+@import 'css-icons';
+
+$font-family-robot-serif: Roboto, sans-serif;
+$font-weight-bold: 900;
+$font-weight-medium-bold: 700;
+$font-weight-light: 300;
+
+//Colors
+$button-font-color: #2b2b2b;
+$upload-button-color: $dark-turquoise;
+
+.outline-none {
+  outline: none;
+}
+
+.text-underlined,
+.text-hover-underline:hover {
+  text-decoration: underline !important;
+}
+
+// @TODO: Establish a proper set of button variants.
+
+u.letter-spacing {
+  letter-spacing: 0.1rem;
+}
+
+.btn-upper {
+  letter-spacing: $btn-letter-spacing;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+}
+
+.btn {
+  font-size: 1rem;
+}
+
+.text-upper {
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+}
+
+.dark-background {
+  background-color: $navbar-background-color;
+}
+
+.gray-200-bg {
+  background-color: $gray-200;
+}
+
+.text-condensed {
+  font-family: $font-family-condensed;
+}
+
+.bottom-gap {
+  margin-bottom: rhythm(6) !important;
+}
+
+.margin-bottom-40 {
+  margin-bottom: rhythm(8);
+}
+
+.top-gap {
+  margin-top: rhythm(6) !important;
+}
+
+//--button primary
+.btn-primary {
+  background: $primary-light-blue 0% 0% no-repeat padding-box;
+  border: $btn-border-size solid $light-blue;
+  border-radius: rhythm(1);
+  color: $gray-700;
+  height: rhythm(10);
+  opacity: $opacity-1;
+  padding: 0 rhythm(4);
+  position: relative;
+  white-space: nowrap;
+
+  svg {
+    background: $light-blue 0% 0% no-repeat padding-box;
+    color: $white;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: $light-blue 0% 0% no-repeat padding-box;
+    border: $btn-border-size solid $light-blue;
+    background-color: $light-blue !important;
+    color: $white;
+    box-shadow: none !important;
+  }
+}
+
+//--button secondary
+.btn-secondary {
+  background: $gray-100 0% 0% no-repeat padding-box;
+  border: $btn-border-size solid $white;
+  border-radius: rhythm(1);
+  color: $gray-700;
+  height: rhythm(10);
+  opacity: $opacity-1;
+  padding: 0 rhythm(4);
+  position: relative;
+
+  svg {
+    background: $gray-100 0% 0% no-repeat padding-box;
+    color: $gray-700;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: $gray-100 0% 0% no-repeat padding-box;
+    border: $btn-border-size solid $gray-500;
+    color: $gray-700 !important;
+    background-color: $gray-100 !important;
+  }
+}
+
+//--feedback button
+.btn-feedback {
+  padding: rhythm(2) rhythm(4);
+}
+
+.menu-toggler {
+  border: none !important;
+  box-shadow: none !important;
+
+  svg {
+    color: $gray-100;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  &:hover svg {
+    color: $gray-500;
+  }
+}
+
+.full-border-button {
+  border: $btn-border-size;
+}
+
+%shadow {
+  text-shadow: 1px 1px 1px $shadow-color;
+}
+
+.edit-button {
+  background: transparent;
+  border: none;
+  color: $gray-500;
+  text-decoration: underline;
+  height: 100%;
+  opacity: $opacity-1;
+  padding: 0;
+  position: relative;
+
+  svg {
+    background: transparent;
+    color: $gray-500;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    background: transparent;
+    border: none;
+    background-color: transparent !important;
+    color: $gray-500 !important;
+    box-shadow: none !important;
+  }
+}
+
+.upload-button {
+  border: 0.188rem solid $upload-button-color !important;
+  border-radius: 0.3125rem;
+  background: #55bca626 0% 0% no-repeat padding-box;
+  color: $button-font-color;
+  position: relative;
+  padding: 0.5rem 1rem;
+
+  svg {
+    background: transparent;
+    color: $button-font-color;
+  }
+
+  &:active,
+  &:hover,
+  &.primary-button {
+    background-color: $upload-button-color;
+    color: $white;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.hamburger {
+  height: rhythm(4);
+  width: rhythm(5);
+  cursor: pointer;
+  
+  span {
+    background-color: $gray-100;
+    height: rhythm(0.6);
+    width: rhythm(5);
+    top: 0;
+    transition: all 0.25s;
+    
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: rhythm(1.6);
+    }
+    
+    &:nth-child(4) {
+      top: rhythm(3.2);
+    }
+  }
+  
+  &:hover {
+    span {
+      background-color: $gray-500;
+    }
+  }
+  
+  &.nav_open {
+    span {
+      &:nth-child(1),
+      &:nth-child(4) {
+        opacity: 0;
+      }
+      
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.cancel-button {
+  font-family: $font-family-robot-serif;
+  font-size: $font-size-sm;
+  padding: 0.625rem 1rem;
+  font-weight: $font-weight-medium-bold;
+  letter-spacing: 0.087rem;
+}
+
+.opacity-1 {
+  opacity: $opacity-1;
+}
+
+.content-wrapper-top-border-lightblue {
+  border-top: $card-event-border-size solid $light-blue !important;
+}
+
+.content-wrapper-top-border-darkTurquoise {
+  border-top: $card-event-border-size solid $dark-turquoise !important;
+}
+
+.content-wrapper-top-border-yellow {
+  border-top: $card-event-border-size solid $yellow !important;
+}
+
+.card-light-border {
+  border: 1px solid $gray-200;
+}
+
+.footer-container {
+  bottom: rhythm(0);
+  min-height: rhythm(20);
+  background-color: $white;
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.unlike-icon {
+  background-color: transparent;
+  font-size: $font-size-xs;
+
+  svg {
+    width: rhythm(2);
+    height: rhythm(2);
+    margin-right: rhythm(1);
+    color: $gray-500;
+  }
+
+  span {
+    color: $gray-500;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.like-icon {
+  background-color: transparent;
+  font-size: $font-size-xs;
+
+  svg {
+    width: rhythm(2);
+    height: rhythm(2);
+    margin-right: rhythm(1);
+    color: $gray-700;
+  }
+
+  span {
+    color: $gray-700;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.expand-button {
+  background: transparent;
+  color: $gray-500;
+  opacity: $opacity-1;
+
+  svg {
+    background: transparent;
+    color: $gray-500;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    background: transparent;
+    border: none;
+    background-color: transparent !important;
+    color: $gray-500 !important;
+  }
+}
+
+.profile-edit-card-title {
+  font-family: $font-family-robot-serif;
+  font-size: 1rem;
+  font-weight: $font-weight-medium-bold;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.g700-text-clr {
+  color: $gray-700 !important;
+}
+
+.g600-text-clr {
+  color: $gray-600 !important;
+}
+
+.text-color-black {
+  color: $black;
+}
+
+.letter-spacing-01rem {
+  letter-spacing: $letter-spacing-01rem;
+}
+
+.all-links-image {
+  height: rhythm(5);
+  width: rhythm(5);
+}
+
+.bookmark-input-container {
+  border: 1px solid $gray-600;
+}
+
+.todo-input-container {
+  border: 1px solid $gray-600;
+}
+
+.bookmark-item-container {
+  border: 1px solid $gray-500;
+}
+
+.todo-item-container {
+  border: 1px solid $gray-500;
+}
+
+.all-links-overlay-icon {
+  width: rhythm(6);
+  height: rhythm(6);
+  
+}
+
+.gray-600-hover:hover {
+  color: $gray-600;
+}
+
+.envelop-icon {
+  font-size: 0.84375rem;
+  margin-top: rhythm(1);
+}
+
+.search-icon {
+  height: rhythm(4);
+  width: rhythm(4);
+}
+
+.approve-color {
+  color: $dark-turquoise;
+}
+
+.reject-color {
+  color: $red;
+}
+
+.top-gray-border {
+  border-top: 1px solid $gray-600;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+.css-19bon8n { // this is the class of the skeleton
+  border-radius: 0 !important;
+}
+
+.circle-skeleton {
+  .css-19bon8n {
+    border-radius: 50% !important;    
+  }
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $short-description-line-count;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

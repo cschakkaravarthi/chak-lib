@@ -1,0 +1,1 @@
+{"version":3,"file":"siteLogo.d.ts","sourceRoot":"","sources":["../../src/components/siteLogo.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,EAAE,EAAE,EAAE,MAAM,OAAO,CAAC;AAGlC,MAAM,WAAW,aAAa;IAC5B,WAAW,EAAE,CAAC,CAAC,EAAE,KAAK,CAAC,cAAc,KAAK,IAAI,CAAC;IAC/C,OAAO,EAAE,MAAM,CAAC;CACjB;AAED,eAAO,MAAM,QAAQ,EAAE,EAAE,CAAC,aAAa,CAQtC,CAAC"}

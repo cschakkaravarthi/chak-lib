@@ -1,0 +1,87 @@
+@import 'modules';
+@import 'common';
+@import '~bootstrap/scss/card';
+
+.custom-checkbox,
+.left-label-checkbox {
+  input[type='checkbox'] {
+    display: none;
+  }
+}
+
+.custom-checkbox label::before {
+  background-color: $white;
+  border: $checkbox-border solid $gray-500;
+  border-radius: $checkbox-border-radius;
+  content: '';
+  display: inline-block;
+  height: $checkbox-height;
+  left: rhythm(0);                //position of checkbox
+  position: absolute;
+  top: 2px;               //position of checkbox
+  width: $checkbox-width;
+}
+
+.custom-checkbox,
+.left-label-checkbox {
+  label {
+    color: $black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: $font-size-xs;
+    margin-bottom: rhythm(0);
+    position: relative;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+  }
+}
+
+.custom-checkbox label {
+  padding-left: rhythm(5);
+}
+
+.custom-checkbox .checkbox label {
+  margin-bottom: rhythm(2);
+}
+
+.custom-checkbox .checkbox label::before {
+  border-radius: $checkbox-border-radius;
+}
+
+.custom-checkbox input[type='checkbox']:checked + label::before {
+  @extend %shadow;
+  border: $checkbox-border solid $gray-700;
+  color: $light-blue;
+  content: $checkbox-tick-content;
+  font-size: $checkbox-size;
+  line-height: rhythm(3);
+  text-align: center;
+}
+
+.left-label-checkbox label.checked::after {
+  @extend %shadow;
+  border: $checkbox-border solid $gray-700;
+  color: $light-blue;
+  content: $checkbox-tick-content;
+  font-size: $checkbox-size;
+  line-height: rhythm(3);
+  text-align: center;
+}
+
+.left-label-checkbox label::after {
+  background-color: $white;
+  border: $checkbox-border solid $gray-500;
+  border-radius: $checkbox-border-radius;
+  content: '';
+  display: inline-block;
+  height: $checkbox-height;
+  width: $checkbox-width;
+  position: absolute;
+  right: rhythm(-5);
+  top: 2px;
+}
+
+.left-label-checkbox {
+  padding-right: rhythm(5);
+}

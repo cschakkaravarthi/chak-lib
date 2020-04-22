@@ -1,0 +1,1 @@
+{"version":3,"file":"menuSlide.d.ts","sourceRoot":"","sources":["../../src/transitions/menuSlide.tsx"],"names":[],"mappings":"AAAA,OAAc,EAAE,EAAE,EAAE,MAAM,OAAO,CAAC;AAGlC,OAAO,8BAA8B,CAAC;AAEtC,MAAM,WAAW,wBAAwB;IACvC,UAAU,EAAE,OAAO,CAAC;CACrB;AAED,eAAO,MAAM,mBAAmB,EAAE,EAAE,CAAC,wBAAwB,CAW5D,CAAC"}
